@@ -6,8 +6,9 @@ module homelet.mccanny.minesweeper {
 	requires spring.beans;
 	requires spring.core;
 	requires spring.context;
-	
-	opens homelet.mccanny.minesweeper to javafx.fxml, spring.core;
+    requires javafx.graphics;
+
+    opens homelet.mccanny.minesweeper to javafx.fxml, spring.core;
 	opens homelet.mccanny.minesweeper.config to spring.core;
 	opens homelet.mccanny.minesweeper.service to spring.core;
 	opens homelet.mccanny.minesweeper.controller to javafx.fxml, spring.core;
